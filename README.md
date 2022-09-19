@@ -1,4 +1,4 @@
-# Subsquid Homebrew Tap
+# Subsquid CLI Homebrew Tap
 
 Usage:
 
@@ -7,11 +7,11 @@ Usage:
 ```bash
 brew tap subsquid/cli
 ```
-3. Install packages (for example CLI)
+3. Install CLI
 ```bash
 brew install sqd
 ```
-4. If you already tapped and installed, then you can update packages
+4. If you already tapped and installed, then you can update package automatically
 ```bash
 brew upgrade
 ```
