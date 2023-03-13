@@ -1,4 +1,4 @@
-class Sqd < Formula
+class SqdAT072 < Formula
     desc "Subsquid - CLI"
     homepage "https://docs.subsquid.io/deploy-squid/squid-cli/"
     license "GNU"
