@@ -28,14 +28,17 @@ $(gen)
 end
 EOL
 
+version_name=$(echo $npm_package_version | sed -r 's/\<./\U&/g' | sed 's/[^a-zA-Z0-9]//g')
+tag_name=$(echo $version_tag | sed -r 's/\<./\U&/g' | sed 's/[^a-zA-Z0-9]//g')
+
 cat > sqd@$npm_package_version.rb <<EOL
-class SqdAT${npm_package_version//\./} < Formula 
+class SqdAT$version_name < Formula 
 $(gen)
 end
 EOL
 
 cat > sqd@$version_tag.rb <<EOL
-class SqdAT$version_tag < Formula 
+class SqdAT$tag_name < Formula 
 $(gen)
 end
 EOL
